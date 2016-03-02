@@ -1,0 +1,8 @@
+dnsmasq:
+  image: "flippa/dnsmasq:v2.75"
+  command: "--log-facility=-"
+  expose:
+    - "53:53/tcp"
+    - "53:53/udp"
+  cap_add:
+    - "NET_ADMIN"
