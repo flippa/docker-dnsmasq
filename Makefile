@@ -7,7 +7,7 @@ LATEST = $(PROJECT):latest
 .PHONY: build
 build:
 	docker build --rm -t $(IMAGE) .
-	docker tag -f $(IMAGE) $(LATEST)
+	docker tag $(IMAGE) $(LATEST)
 
 .PHONY: push
 push:
