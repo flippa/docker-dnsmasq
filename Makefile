@@ -1,5 +1,5 @@
 PROJECT       ?= flippa/dnsmasq
-TAG           ?= v2.75
+TAG           ?= v2.76
 
 IMAGE = $(PROJECT):$(TAG)
 LATEST = $(PROJECT):latest
